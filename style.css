@@ -1,0 +1,754 @@
+body {
+  margin: 0%;
+}
+
+.foto1 {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  overflow: hidden; /* Garante que a imagem não saia do limite circular */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.foto1 img {
+ 
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Garante que a imagem preencha o círculo */
+}
+
+.foto1:hover {
+  transform: scale(1.2); /* Aumenta a imagem em 20% */ 
+}
+
+.introducao-bg {
+background-position: center;
+  background-image: url('./restaurante/bg.png');
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.principal {
+  color: white;
+  margin-bottom: 6px;
+}
+
+.end { 
+  color: white;
+}
+
+.secun {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 24px ;
+}
+
+.bot  {
+  background-color: green;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-top: 15px;
+  border-radius: 8px;
+  color: white;
+  font: 400 1.125rem/1.35 "Roboto"
+}
+
+.ham1 {
+  overflow: hidden; /* Garante que a imagem não saia do limite circular */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.ham1:hover {
+  transform: scale(1.2);
+}
+
+.um {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.dois {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ i {
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+ font-size: 20px;
+
+
+ }
+
+
+ .promo  {
+  font: 400 1.5rem/1.15 "Poppins";
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+ }
+
+
+ .menu {
+padding-left: 8px;
+padding-right: 8px; 
+display: flex;
+gap: 10px;
+padding-top: 30px;
+ }
+
+ .bebidas {
+  margin-top: 40px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px; 
+  max-width: 1288px;
+   
+ }
+
+ h2 {
+font: 600 1.5rem/1.5 'Roboto';
+margin-bottom: 5px;
+
+ }
+
+ .bebidas2 {
+  padding-left: 8px;
+  padding-right: 8px; 
+  display: flex;
+  gap: 10px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+
+
+  
+   }
+
+  .secun {
+  margin-bottom: 5px;
+  }
+
+.des {
+width: 100%;
+}
+
+.footer {
+  padding-top: 9px;
+  background-color: red;
+  position: fixed;
+  bottom: 0px;
+  z-index: 40;
+  padding-top: 1rem; /* Espaçamento superior */
+  padding-bottom: 1rem; /* Espaçamento inferior */
+
+
+
+  
+  
+
+  
+
+
+}
+
+.roda {
+  color: white;
+  font: 600 1.5rem/1.5 'Poppins';
+  text-decoration: none; /* Remove o sublinhado */
+  font-size: 16px;
+padding-left: 70px;
+
+
+
+
+ 
+
+}
+
+a {
+  padding-right: 56px;
+  
+
+}
+
+
+add-to-cart {
+  background: black;
+}
+
+.add-to-cart {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+}
+
+
+
+
+
+/* Ícone no botão */
+.add-to-cart i {
+  margin-right: 8px;
+}
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed; 
+  top: 0;         
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none; /* Remover sombra */
+
+}
+
+.meucarrinho {
+
+  min-width: 90%;
+  background: white;
+  padding: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  padding-left: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem; /* Define o tamanho da fonte (24px, no padrão de Tailwind) */
+  line-height: 2rem;
+}
+
+.itens do carrinho {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  flex-direction: column; 
+}
+
+.total {
+  font-weight: bold;
+  text-align: left; 
+}
+p {
+  text-align: left;  
+  margin-top: 1rem;
+}
+
+.conf {
+width: 99%;
+
+border-radius: 0.25rem;
+margin-top: 0.25rem; /* Margem superior de 4px */
+margin-bottom: 0.25rem; /* Margem inferior de 4px */
+border-width: 2px;
+padding: 0.25rem;
+}
+
+.vermelho {
+  color: #f87171;
+  display: none;
+}
+
+.verde {
+  background-color:  #22c55e;
+  color: white;
+ padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+.branco {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem; /* Equivalente a mt-5 */
+}
+
+.conf {
+  width: 100%; /* O campo vai ocupar toda a largura disponível */
+  padding: 12px 20px; /* Aumenta o padding para um campo mais espaçoso */
+  font-size: 16px; /* Aumenta o tamanho da fonte do texto inserido */
+  border-radius: 4px; /* Bordas arredondadas */
+  border: 2px solid #ccc; /* Borda do campo */
+}
+
+.footer {
+  width: 100%;
+  background-color: red;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botaop {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+padding: 10px;
+font-size: 20px;
+background-color: white; /* Rosa claro */
+color: black; 
+border-radius: 5px;
+
+
+
+  
+
+  
+}
+
+
+.botaop {
+  padding: 15px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* Overlay */
+#modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: none; /* Inicialmente escondido */
+}
+
+/* Estilos para o modal de carrinho */
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  width: 80%;
+  max-width: 500px;
+  display: none; /* Inicialmente escondido */
+}
+
+/* Estilos para o modal de entrega */
+#delivery-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  width: 80%;
+  max-width: 500px;
+  display: none; /* Inicialmente escondido */
+}
+
+/* Estilos para os botões */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button#submit-order {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button#close-delivery-modal {
+  background-color: #f44336;
+  color: white;
+}
+
+
+
+
+/* Overlay do Modal */
+#modal-overlay {
+  display: none; /* Inicialmente invisível */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+}
+
+/* Estilo do Modal */
+#modal {
+  display: none; /* Inicialmente invisível */
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o modal */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Título */
+#modal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Detalhes do Carrinho */
+#cart-details {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#cart-details p {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Preço Total */
+#total-price {
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Botões */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#close-modal {
+  background-color: #f44336;
+  color: white;
+}
+
+#close-modal:hover {
+  background-color: #e53935;
+}
+
+#next-modal {
+  background-color: #28a745;
+  color: white;
+}
+
+#next-modal:hover {
+  background-color: #218838;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #modal {
+    width: 90%;
+  }
+}
+
+
+
+
+
+/* Estilo do Modal de Entrega */
+#delivery-modal {
+  display: none; /* Inicialmente invisível */
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o modal */
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Título */
+#delivery-modal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Instruções */
+#delivery-modal p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Formulário de Endereço */
+#delivery-modal label {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 12px 20px; /* Reduzir o padding para compactar ainda mais */
+  width: 75%; /* Diminuir a largura para 75% */
+  max-width: 350px; /* Limitar a largura máxima ainda mais */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+#address {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#address:focus {
+  outline: none;
+  border-color: #28a745;
+}
+
+/* Botões */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#close-delivery-modal {
+  background-color: #f44336;
+  color: white;
+}
+
+#close-delivery-modal:hover {
+  background-color: #e53935;
+}
+
+#submit-order {
+  background-color: #28a745;
+  color: white;
+}
+
+#submit-order:hover {
+  background-color: #218838;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #delivery-modal {
+    width: 90%;
+  }
+}
+
+
+
+
+/* Título */
+#delivery-modal h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Seção dos Contatos */
+#contact-info label,
+#address-info label,
+#payment-info label {
+  font-size: 1rem;
+  color: #555;
+}
+
+#contact-info input,
+#address-info input,
+#payment-info select {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#contact-info input:focus,
+#address-info input:focus,
+#payment-info select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Seção de Endereço */
+#address-info h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Seção de Pagamento */
+#payment-info h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+#payment-info select {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Campo de Troco */
+#change-container {
+  margin-top: 10px;
+  display: none;
+}
+
+#change-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#change-container input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Container para os botões */
+#delivery-modal .button-container {
+  display: flex;
+  justify-content: space-between; /* Espaço entre os botões */
+  gap: 10px; /* Espaço entre os botões */
+  margin-top: 20px;
+  width: 100%; /* Garantir que a largura do container ocupe toda a área disponível */
+}
+
+/* Botões */
+#delivery-modal button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 48%; /* Botões ocupando 48% da largura do container */
+}
+
+#delivery-modal button:hover {
+  background-color: #0056b3;
+}
+
+/* Botão Fechar */
+#close-delivery-modal {
+  background-color: #ccc;
+  margin-top: 10px; /* Margem separando o botão do conteúdo acima */
+  margin-bottom: 3px;
+}
+
+#close-delivery-modal:hover {
+  background-color: #999;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #delivery-modal {
+    width: 90%;
+    max-width: none;
+  }
+
+  #delivery-modal h2 {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+#neighborhood { 
+  padding: 12px 20px; 
+  font-size: 16px; /* Tamanho da fonte */
+  border: 1px solid #ccc; /* Borda suave */
+  border-radius: 4px; /* Bordas arredondadas */
+  background-color: #fff; /* Cor de fundo do campo */
+  color: #333; /* Cor do texto */
+  appearance: none; /* Remove a aparência padrão do select (pode ser útil para personalizações em navegadores específicos) */
+  box-sizing: border-box; 
+}
+
+#cart-details {
+  max-height: 300px; /* Defina a altura máxima desejada */
+  overflow-y: auto; /* Ativa o scroll vertical quando o conteúdo ultrapassa a altura */
+}
+
+.promoul {
+  margin-bottom: 90px;
+}
+
+.dois {
+  margin: 0px;
+}
